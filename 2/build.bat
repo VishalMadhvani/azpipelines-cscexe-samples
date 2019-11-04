@@ -1,0 +1,1 @@
+START /I C:\windows\Microsoft.NET\Framework\v3.5\csc.exe Program.cs

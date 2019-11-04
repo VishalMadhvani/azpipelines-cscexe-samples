@@ -1,0 +1,16 @@
+{
+  "name": "csc-task",
+  "version": "1.0.0",
+  "description": "Azure Pipelines csc.exe Task",
+  "main": "csc.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/q": "^1.5.2"
+  }
+}

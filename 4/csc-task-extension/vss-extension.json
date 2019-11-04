@@ -1,0 +1,33 @@
+{
+    "manifestVersion": 1,
+    "id": "csc-task",
+    "name": "csc.exe",
+    "version": "0.0.4",
+    "publisher": "Vishal-Madhvani-MSFT",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "csc.exe Task",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "files": [
+        {
+            "path": "csc-task"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "csc-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "csc-task"
+            }
+        }
+    ]
+}

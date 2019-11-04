@@ -1,0 +1,12 @@
+{
+  "name": "csc-task-extension",
+  "version": "1.0.0",
+  "description": "Azure Pipelines csc.exe Task Extension",
+  "scripts": {
+    "build": "tfx extension create --manifest-globs vss-extension.json"
+  },
+  "devDependencies": {
+    "tfx-cli": "^0.7.11",
+    "typescript": "^3.8.3"
+  }
+}

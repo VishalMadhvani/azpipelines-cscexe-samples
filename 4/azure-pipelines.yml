@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - 4/*
+
+pool: Default
+
+variables:
+  sample-path: $(Build.SourcesDirectory)/4/
+
+steps:
+- task: csc-task@0
+  inputs:
+    arguments: 'Program.cs'
+    workingDirectory: $(sample-path)
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: $(sample-path)
+    publishLocation: 'pipeline'

@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - 1/*
+
+pool: Default
+
+steps:
+- task: BatchScript@1
+  inputs:
+    filename: 'build.bat'
+    workingFolder: '$(Build.SourcesDirectory)/1/'

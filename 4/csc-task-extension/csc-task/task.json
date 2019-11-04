@@ -1,0 +1,40 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "dfbd4cfb-1654-4da6-80fe-607dfd563577",
+    "name": "csc-task",
+    "friendlyName": "Azure DevOps Pipelines Task that runs C:\\windows\\Microsoft.NET\\Framework\\v3.5\\csc.exe",
+    "description": "",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Vishal",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 4
+    },
+    "inputs": [
+        {
+            "name": "arguments",
+            "type": "string",
+            "label": "Arguments",
+            "required": false,
+            "defaultValue": "",
+            "helpMarkDown": "Arguments passed to CSC"
+        },
+        {
+            "name": "workingDirectory",
+            "type": "filePath",
+            "label": "Working Directory",
+            "required": false,
+            "defaultValue": "",
+            "helpMarkDown": "Working directory where the script is run.",
+            "groupName": "advanced"
+        }
+    ],
+    "instanceNameFormat": "csc.exe",
+    "execution": {
+        "Node": {
+            "target": "csc-task.js"
+        }
+    }
+}

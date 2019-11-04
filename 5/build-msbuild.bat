@@ -1,0 +1,1 @@
+C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe ConsoleApp\ConsoleApp.csproj /toolsversion:3.5 /verbosity:detailed /target:Clean;Rebuild
